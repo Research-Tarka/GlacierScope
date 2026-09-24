@@ -1,0 +1,16 @@
+# Pinned versions of every package ingest.py and serve.py import, verified
+# working together against the bundled embeddable Python. Installed into
+# viewer/runtime/python (not tracked in git -- see .gitignore) with:
+#
+#   viewer\runtime\python\python.exe -m pip install -r viewer\runtime\requirements.txt
+#
+# Someone building GlacierScope from source (rather than using the
+# GitHub Release zip, which ships this already installed) runs that once.
+duckdb==1.5.5
+numpy==2.5.2
+orjson==3.12.0
+polars==1.44.0
+pyproj==3.7.2
+rasterio==1.5.1
+scipy==1.18.1
+shapely==2.1.2

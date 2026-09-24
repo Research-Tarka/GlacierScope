@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use GlacierScope, please cite the paper below and the underlying dataset."
+title: "GlacierScope"
+type: software
+authors:
+  - family-names: "Tarka"
+    given-names: "Maxime"
+repository-code: "https://github.com/Research-Tarka/GlacierScope"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Benchmarked and leakage-validated deep-learning glacier segmentation: a 42-year, five-sensor snow-fraction record for western North America"
+  authors:
+    - family-names: "Tarka"
+      given-names: "Maxime"
+    - family-names: "Baraër"
+      given-names: "Michel"
+    - family-names: "Aubry-Wake"
+      given-names: "Caroline"
+  date-published: 2026-09-21
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7418104"
+  doi: "10.2139/ssrn.7418104"
+references:
+  - type: dataset
+    title: "Western North America Glacier Segmentation and Snow-Fraction Record"
+    authors:
+      - family-names: "Tarka"
+        given-names: "Maxime"
+    doi: "10.5281/zenodo.22311127"

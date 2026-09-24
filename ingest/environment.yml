@@ -1,0 +1,16 @@
+name: glacierscope-ingest
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - duckdb
+  - python-duckdb
+  - polars
+  - geopandas
+  - rasterio
+  - shapely
+  - numpy
+  - scipy
+  - pyarrow
+  - orjson
+  - pip

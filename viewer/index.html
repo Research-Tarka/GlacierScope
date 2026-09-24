@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GlacierScope</title>
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="vendor/MarkerCluster.css">
+  <link rel="stylesheet" href="vendor/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header>
+    <h1>GlacierScope</h1>
+    <input id="search-input" type="text" placeholder="Search glacier ID (e.g. G183901E52080N)" autocomplete="off">
+    <div id="search-results"></div>
+  </header>
+
+  <main>
+    <div id="map"></div>
+
+    <section id="detail" class="hidden">
+      <h2 id="detail-title"></h2>
+      <div class="figure-grid">
+        <div class="figure-box">
+          <h3>Reference footprint</h3>
+          <div id="chart-outline" class="chart"></div>
+          <div class="download-row" data-target="chart-outline"></div>
+        </div>
+        <div class="figure-box">
+          <h3>Centroid drift, 2D</h3>
+          <div id="chart-centroid-2d" class="chart"></div>
+          <div class="download-row" data-target="chart-centroid-2d"></div>
+        </div>
+        <div class="figure-box">
+          <h3>Centroid drift, 3D</h3>
+          <div id="chart-centroid-3d" class="chart"></div>
+          <div class="download-row" data-target="chart-centroid-3d"></div>
+        </div>
+        <div class="figure-box">
+          <h3>Area evolution</h3>
+          <div id="chart-evolution-temporal" class="chart"></div>
+          <div class="download-row" data-target="chart-evolution-temporal"></div>
+        </div>
+        <div class="figure-box">
+          <h3>Area evolution, 2D</h3>
+          <div id="chart-evolution-2d" class="chart"></div>
+          <div class="year-scrubber-row">
+            <button id="evolution-2d-play" type="button">Play</button>
+            <input id="evolution-2d-slider" type="range" step="1" min="0" max="0" value="0">
+            <span id="evolution-2d-year"></span>
+          </div>
+          <div class="download-row" data-target="chart-evolution-2d"></div>
+        </div>
+        <div class="figure-box">
+          <h3>Area evolution, 3D</h3>
+          <div id="chart-evolution-3d" class="chart"></div>
+          <div class="year-scrubber-row">
+            <button id="evolution-3d-play" type="button">Play</button>
+            <input id="evolution-3d-slider" type="range" step="1" min="0" max="0" value="0">
+            <span id="evolution-3d-year"></span>
+          </div>
+          <div class="download-row" data-target="chart-evolution-3d"></div>
+        </div>
+        <div class="figure-box">
+          <h3>Fraction evolution (snow / sgv / sgv_ref)</h3>
+          <div id="chart-fraction-evolution" class="chart"></div>
+          <div class="download-row" data-target="chart-fraction-evolution"></div>
+        </div>
+        <div class="figure-box">
+          <h3>Altitude evolution</h3>
+          <div id="chart-altitude-evolution" class="chart"></div>
+          <div class="download-row" data-target="chart-altitude-evolution"></div>
+        </div>
+        <div class="figure-box">
+          <h3>Surface change heatmap</h3>
+          <div id="chart-heatmap" class="chart"></div>
+          <div class="download-row" data-target="chart-heatmap"></div>
+        </div>
+      </div>
+
+      <div class="figure-box wide">
+        <h3>Variable browser</h3>
+        <div id="variable-browser"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="vendor/leaflet.markercluster.js"></script>
+  <script src="vendor/echarts.min.js"></script>
+  <script src="vendor/echarts-gl.min.js"></script>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

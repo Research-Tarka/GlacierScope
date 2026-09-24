@@ -1,0 +1,32 @@
+# data, never tracked
+data/
+
+# machine-specific, remembered file picks
+.last_selection.json
+
+# python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+
+# packages pip-installed into the bundled embeddable runtime
+viewer/runtime/python/Lib/site-packages/
+viewer/runtime/python/Scripts/
+
+# Tcl/Tk + tkinter, fetched on demand by viewer/runtime/fetch_tkinter.ps1
+viewer/runtime/python/Lib/tkinter/
+viewer/runtime/python/tcl/
+viewer/runtime/python/_tkinter.pyd
+viewer/runtime/python/tcl86t.dll
+viewer/runtime/python/tk86t.dll
+viewer/runtime/python/zlib1.dll
+
+# os
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editors
+.vscode/
+.idea/
